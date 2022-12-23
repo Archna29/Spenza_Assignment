@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.Map{
+  display:flex;
+}
+.column-1 {
+  margin-left: 1.2rem;
+  flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
+  flex-basis: 70%; /* sets initial width to 70% */
+}
+
+.multicolor-bar {
+  margin: 20px 20%;
+}
+
+.multicolor-bar .values .value {
+  float: left;
+  text-align: center;
+}
+
+.multicolor-bar .scale .graduation {
+  float: left;
+  text-align: center;
+}
+
+.multicolor-bar .bars .bar {
+  float: left;
+  height: 10px;
+}
+
+.multicolor-bar .bars div.bar:first-of-type {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.multicolor-bar .bars div.bar:last-of-type {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.multicolor-bar .legends {
+  text-align: center;
+}
+
+
+.multicolor-bar .legends .legend {
+    display: inline-block;
+    margin: 0 3rem;
+  text-align: center; 
+}
+
+.multicolor-bar .legends .legend .square {
+  font-size: 1rem;
+  vertical-align: middle;  
+
+}
+
+.multicolor-bar .legends .legend .label {
+  margin-left:  0.5rem;
+   vertical-align: middle;  
+}
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+  .Map{
+      /* it place the items in vertical direction */
+    flex-direction: column;
+  }
+
+  
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
